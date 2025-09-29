@@ -18,21 +18,28 @@
     
     sourceWidth="800" sourceHeight="600" displayWidth="1280" displayHeight="720">
 
-      
+    <a-assets>
+        <img id="img1" src="./assets/eyes.jpg">
+      </a-assets> 
+
         <a-marker type='barcode' value='0'>
    
+            <a-image src="#img1" rotation="270 0 0" width="1" height="1"></a-image>
+
             <a-text value="hello !" 
-            side="double" position = "0 0 -0.5" rotation="270 0 0" 
+            side="double" position = "0 0 -1" rotation="270 0 0" 
             width="8"
-            color="blue" align="center" >
+            color="black" align="center" >
             </a-text>
 
             <a-text value="Luella !" 
-            side="double" position = "0 0 0" rotation="270 0 0" 
+            side="double" position = "0 0 -0.5" rotation="270 0 0" 
             width="8"
-            color="white" align="center" >
+            color="black" align="center" >
             </a-text>
 
+            
+              
         </a-marker>
 
         <a-entity camera></a-entity>
